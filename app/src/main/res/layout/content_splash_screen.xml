@@ -4,23 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.ankita.mysplash.SplashScreen"
     tools:showIn="@layout/activity_splash_screen">
 
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/back"
+        android:layout_alignParentBottom="true"
+        android:scaleType = "centerCrop"
+
+        android:layout_alignParentTop="true" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="SweeDelight"
-           android:textColor="#454545"
-        android:id="@+id/textView"
+        android:text=" Swee"
+        android:id="@+id/swee"
+        android:textSize="50dp"
+        android:textColor="#ffff00"
         android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Delight"
+        android:id="@+id/delight"
+        android:textSize="50dp"
+        android:textColor="#ff0000"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="160dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sweetness Delivered Everyday"
+        android:id="@+id/motto"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+
+        android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="194dp" />
+        android:layout_below="@id/swee"
+        />
 </RelativeLayout>
